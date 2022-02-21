@@ -50,12 +50,4 @@ public class BasePage {
         element.clear();
         element.sendKeys(value);
     }
- /*   public boolean isElementNotNull(WebElement element) {
-        try {
-            wait.until(ExpectedConditions.);
-        }catch (Exception e) {}
-        return element.isDisplayed();
-    }
-
-  */
 }
