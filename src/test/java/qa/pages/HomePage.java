@@ -24,12 +24,6 @@ public class HomePage extends BasePage {
         return isElementVisible(CreateAcc);
     }
 
-//    @FindBy(how = How.XPATH, using = "//*[text()=\"Get started\"]")
-//    private WebElement GetStarted;
-
-//    public void clickGetStartedButton() {
-//        clickElement(GetStarted);}
-
     @FindBy(how = How.XPATH, using = "//*[contains(@name,'firstname')]")
     private WebElement FirstName;
 
