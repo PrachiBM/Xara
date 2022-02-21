@@ -1,0 +1,4 @@
+qa/pages/HomePage.class
+qa/runner/TestRunner.class
+qa/steps/HomePageSteps.class
+qa/pages/BasePage.class

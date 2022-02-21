@@ -1,0 +1,116 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-02-21T10:40:33.587Z",
+        "line": 4,
+        "name": "1. Create new account on Xara homepage",
+        "description": "",
+        "id": "automate-booking;1.-create-new-account-on-xara-homepage",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 12070875000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User in on Create an account page",
+            "match": {
+              "location": "qa.steps.HomePageSteps.verifyApplicationHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 778003000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Verify that FirstName, LastName, Email and Password is visible",
+            "match": {
+              "location": "qa.steps.HomePageSteps.verifyInput()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 42904000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Verify that Create an account button is disabled",
+            "match": {
+              "location": "qa.steps.HomePageSteps.createAnAccountButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2423998000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User enter invalid details like 1234 4567 ab@gmail 123 values",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1234",
+                  "offset": 32
+                },
+                {
+                  "val": "4567",
+                  "offset": 37
+                },
+                {
+                  "val": "ab@gmail",
+                  "offset": 42
+                },
+                {
+                  "val": "123",
+                  "offset": 51
+                }
+              ],
+              "location": "qa.steps.HomePageSteps.EnterInvalidDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 71050000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Verify that error message is displayed",
+            "match": {
+              "location": "qa.steps.HomePageSteps.ErrorMessage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@test"
+          }
+        ]
+      }
+    ],
+    "name": "Automate Booking",
+    "description": "",
+    "id": "automate-booking",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/uiTest.feature",
+    "tags": [
+      {
+        "name": "@test",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
