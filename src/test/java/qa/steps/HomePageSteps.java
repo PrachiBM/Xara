@@ -17,10 +17,7 @@ public class HomePageSteps {
     public void verifyApplicationHomePage() {
         Assert.assertTrue(homePage.verifyHomePageVisible());
     }
- //   @When("^User clicks on Get Started button$")
-//    public void clickGetStarted(){
-//        homePage.clickGetStartedButton();
-//    }
+ 
     @Given("^Verify that FirstName, LastName, Email and Password is visible$")
     public void verifyInput(){
         Assert.assertTrue(homePage.verifyFirstName());
