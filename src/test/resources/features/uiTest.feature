@@ -1,5 +1,5 @@
 @test
-Feature: Automate Booking
+Feature: Create Account
 
   Scenario: 1. Create new account on Xara homepage
     Given User in on Create an account page
